@@ -1,0 +1,237 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dG:/FPGA/ShoreLab03/simulation/qsim
+Ehard_block
+Z0 w1613712012
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 DPx10 cycloneive 21 cycloneive_components 0 22 Yj^f[Ven<H;0LiK:6PWEg0
+Z7 dG:/FPGA/ShoreLab05/simulation/qsim
+Z8 8MIPS.vho
+Z9 FMIPS.vho
+l0
+L34
+VOgIg9T_BR7joedFDVM>H13
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1613712014
+!i10b 1
+Z12 !s108 1613712014.000000
+Z13 !s90 -work|work|MIPS.vho|
+Z14 !s107 MIPS.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
+l64
+L50
+V`^CmQg<48W[ez[JL_5@Yn2
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eshorelab03
+Z17 w1613156860
+R2
+R6
+R1
+Z18 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+R3
+R4
+R5
+Z19 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+R7
+R8
+R9
+l0
+L79
+VDm5X5bX=G0Nb@^7ge[baT3
+!s100 X38A[?PO>SDPcCN?E7a[;3
+R10
+32
+Z20 !s110 1613156863
+!i10b 1
+Z21 !s108 1613156863.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R6
+R1
+R18
+R3
+R4
+R5
+R19
+DEx4 work 10 shorelab03 0 22 Dm5X5bX=G0Nb@^7ge[baT3
+l3284
+L308
+VE1:X2BAFAB^XHHzUokI][2
+!s100 @1Tz>O2?93`5cT3dck@C_2
+R10
+32
+R20
+!i10b 1
+R21
+R13
+R14
+!i113 1
+R15
+R16
+Eshorelab03_vhd_vec_tst
+Z22 w1613156858
+R4
+R5
+R7
+Z23 8Lab05.vwf.vht
+Z24 FLab05.vwf.vht
+l0
+L31
+Vh_CMgC[PXbUiAlZVn_Q`03
+!s100 4FYlSR^?I:kKgI65mA1<o2
+R10
+32
+Z25 !s110 1613156864
+!i10b 1
+Z26 !s108 1613156864.000000
+Z27 !s90 -work|work|Lab05.vwf.vht|
+Z28 !s107 Lab05.vwf.vht|
+!i113 1
+R15
+R16
+Ashorelab03_arch
+R4
+R5
+DEx4 work 22 shorelab03_vhd_vec_tst 0 22 h_CMgC[PXbUiAlZVn_Q`03
+l66
+L33
+V;ZW0ESCj]hb1GV2f<oR^X3
+!s100 0WUz>lbGi@fQ9_3lIdEcP3
+R10
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R15
+R16
+Eshorelab05
+R0
+R2
+R6
+R1
+R18
+R3
+R4
+R5
+R19
+R7
+R8
+R9
+l0
+L79
+VJD1oV<GA8eUY5YC<F7]Qa1
+!s100 @6Kg^07i=[0fiX;I9FI>:2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R6
+R1
+R18
+R3
+R4
+R5
+R19
+DEx4 work 10 shorelab05 0 22 JD1oV<GA8eUY5YC<F7]Qa1
+l3298
+L312
+V@Hi2IY?F>AjoMzPL93Pk;3
+!s100 FL_NJJ3@o8alPlLHWblb=1
+R10
+32
+Z29 !s110 1613712015
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eshorelab05_vhd_vec_tst
+Z30 w1613712010
+R4
+R5
+R7
+Z31 8Lab05A.vwf.vht
+Z32 FLab05A.vwf.vht
+l0
+L31
+VbOiD]J=6RW:T0?f3KZ4K;2
+!s100 hWF:>0dKFa`FlNLLY1kjV3
+R10
+32
+R29
+!i10b 1
+Z33 !s108 1613712015.000000
+Z34 !s90 -work|work|Lab05A.vwf.vht|
+Z35 !s107 Lab05A.vwf.vht|
+!i113 1
+R15
+R16
+Ashorelab05_arch
+R4
+R5
+Z36 DEx4 work 22 shorelab05_vhd_vec_tst 0 22 bOiD]J=6RW:T0?f3KZ4K;2
+l70
+L33
+VXfI71Zo6`En]5bZIP`3:02
+!s100 =Jl;P`FWn@JRg;FRc1R062
+R10
+32
+R29
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R15
+R16
