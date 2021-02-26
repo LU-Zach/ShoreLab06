@@ -12,7 +12,7 @@ ENTITY  Execute IS
 			Function_opcode : IN 	STD_LOGIC_VECTOR( 5 DOWNTO 0 );
 			ALUOp 			: IN 	STD_LOGIC_VECTOR( 1 DOWNTO 0 );
 			ALUSrc 			: IN 	STD_LOGIC;
-			Zero 			: OUT	STD_LOGIC;
+			Zero 				: OUT	STD_LOGIC;
 			ALU_Result 		: OUT	STD_LOGIC_VECTOR( 31 DOWNTO 0 );
 			Add_Result 		: OUT	STD_LOGIC_VECTOR( 7 DOWNTO 0 );
 			PC_plus_4 		: IN 	STD_LOGIC_VECTOR( 9 DOWNTO 0 );
@@ -23,7 +23,7 @@ ARCHITECTURE behavior OF Execute IS
 SIGNAL Ainput, Binput 		: STD_LOGIC_VECTOR( 31 DOWNTO 0 );
 SIGNAL ALU_output_mux		: STD_LOGIC_VECTOR( 31 DOWNTO 0 );
 SIGNAL Branch_Add 			: STD_LOGIC_VECTOR( 7 DOWNTO 0 );
-SIGNAL ALU_ctl				: STD_LOGIC_VECTOR( 2 DOWNTO 0 );
+SIGNAL ALU_ctl					: STD_LOGIC_VECTOR( 2 DOWNTO 0 );
 BEGIN
 	Ainput <= Read_data_1;
 						-- ALU input mux
@@ -64,7 +64,7 @@ PROCESS ( ALU_ctl, Ainput, Binput )
  	 	WHEN "101" 	=>	ALU_output_mux 	<= X"00000000";
 						-- ALU performs ALUresult = A_input -B_input
  	 	WHEN "110" 	=>	ALU_output_mux 	<= Ainput - Binput;
-						-- ALU performs SLT
+						-- ALU performs SLT	
   	 	WHEN "111" 	=>	ALU_output_mux 	<= Ainput - Binput ;
  	 	WHEN OTHERS	=>	ALU_output_mux 	<= X"00000000" ;
   	END CASE;

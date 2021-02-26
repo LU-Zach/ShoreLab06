@@ -1,7 +1,7 @@
 # do MIPS.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:20:14 on Feb 18,2021
+# Start time: 22:00:40 on Feb 25,2021
 # vcom -work work MIPS.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -14,26 +14,26 @@
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-# -- Compiling entity ShoreLab05
-# -- Compiling architecture structure of ShoreLab05
-# End time: 23:20:15 on Feb 18,2021, Elapsed time: 0:00:01
+# -- Compiling entity ShoreLab06
+# -- Compiling architecture structure of ShoreLab06
+# End time: 22:00:41 on Feb 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:20:15 on Feb 18,2021
-# vcom -work work Lab05A.vwf.vht 
+# Start time: 22:00:41 on Feb 25,2021
+# vcom -work work Lab06.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ShoreLab05_vhd_vec_tst
-# -- Compiling architecture ShoreLab05_arch of ShoreLab05_vhd_vec_tst
-# End time: 23:20:15 on Feb 18,2021, Elapsed time: 0:00:00
+# -- Compiling entity ShoreLab06_vhd_vec_tst
+# -- Compiling architecture ShoreLab06_arch of ShoreLab06_vhd_vec_tst
+# End time: 22:00:41 on Feb 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -sdfmax ShoreLab05_vhd_vec_tst/i1=MIPS_vhd.sdo -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ShoreLab05_vhd_vec_tst 
-# Start time: 23:20:15 on Feb 18,2021
+# vsim -novopt -c -t 1ps -sdfmax ShoreLab06_vhd_vec_tst/i1=MIPS_vhd.sdo -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ShoreLab06_vhd_vec_tst 
+# Start time: 22:00:41 on Feb 25,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.shorelab05_vhd_vec_tst(shorelab05_arch)
+# Loading work.shorelab06_vhd_vec_tst(shorelab06_arch)
 # SDF 10.5b Compiler 2016.10 Oct  5 2016
 # 
 # Loading ieee.vital_timing(body)
@@ -42,24 +42,27 @@
 # Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.shorelab05(structure)
+# Loading work.shorelab06(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
 # Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
 # Loading cycloneive.cycloneive_ena_reg(behave)
-# Loading altera.dffeas(vital_dffeas)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
 # Loading cycloneive.cycloneive_ram_block(block_arch)
 # Loading cycloneive.cycloneive_ram_register(reg_arch)
 # Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
 # Loading instances from MIPS_vhd.sdo
 # Loading timing data from MIPS_vhd.sdo
-# ** Warning: Design size of 347391 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 348727 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /shorelab05_vhd_vec_tst File: Lab05A.vwf.vht
+#    Time: 0 ps  Iteration: 0  Instance: /shorelab06_vhd_vec_tst File: Lab06.vwf.vht
 # after#35
-# End time: 23:20:18 on Feb 18,2021, Elapsed time: 0:00:03
+# Simulation time: 283188 ps
+# Simulation time: 283188 ps
+# Simulation time: 283188 ps
+# End time: 22:00:51 on Feb 25,2021, Elapsed time: 0:00:10
 # Errors: 0, Warnings: 1

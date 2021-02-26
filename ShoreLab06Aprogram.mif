@@ -1,0 +1,18 @@
+-- MIPS Instruction Memory Initialization File
+Depth = 256;
+Width = 32;
+Address_radix = HEX;
+Data_radix = HEX;
+Content
+Begin
+-- Use NOPS for default instruction memory values
+	[00..FF]: 00000000; -- nop (sll r0,r0,0)
+-- Place MIPS Instructions here
+-- Note: memory addresses are in words and not bytes
+-- i.e. next location is +1 and not +4
+	00: 20010000; --	addi $1, $0, 0 		--initialize variable a to 0
+	01: 20220000; --	addi $2, $1, 0 		--check if 0 + 0 = 0
+	02: 2001FFFF; --	addi $1, $0, -1		--check if negative values are handled correctly
+	03: 20210002; --	addi $1, $1, 2	 	--check if addi handles crossing from negative to positive
+	04: 2021FFFE; --	addi $1, $1, -2		--check if addi handles crossing from positive to negative
+End;

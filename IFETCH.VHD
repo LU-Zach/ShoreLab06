@@ -32,7 +32,7 @@ inst_memory: altsyncram
 		widthad_a => 8, --Address width affects JUMP implementation, see below
 		lpm_type => "altsyncram",
 		outdata_reg_a => "UNREGISTERED",
-		init_file => "ShoreLab05Aprogram.mif",
+		init_file => "ShoreLab06Cprogram.mif",
 		intended_device_family => "Cyclone"
 	)
 	PORT MAP (

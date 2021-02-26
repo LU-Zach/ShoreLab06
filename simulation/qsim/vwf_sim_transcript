@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source="G:/FPGA/ShoreLab05/Lab05A.vwf" --testbench_file="G:/FPGA/ShoreLab05/simulation/qsim/Lab05A.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source="G:/FPGA/ShoreLab06/Lab06.vwf" --testbench_file="G:/FPGA/ShoreLab06/simulation/qsim/Lab06.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,18 +25,18 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Feb 18 23:20:10 2021
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source=G:/FPGA/ShoreLab05/Lab05A.vwf --testbench_file=G:/FPGA/ShoreLab05/simulation/qsim/Lab05A.vwf.vht
+    Info: Processing started: Thu Feb 25 22:00:36 2021
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source=G:/FPGA/ShoreLab06/Lab06.vwf --testbench_file=G:/FPGA/ShoreLab06/simulation/qsim/Lab06.vwf.vht
 Critical Warning (138069): Setting INCREMENTAL_COMPILATION to "OFF" is no longer supported. Assignment is ignored. To disable partitions, set the IGNORE_PARTITIONS global assignment to "ON" instead.
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
- files
+ in vector source file when writing test bench files
 
 Completed successfully. 
 
 **** Generating the timing simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="G:/FPGA/ShoreLab05/simulation/qsim/" MIPS -c MIPS
+quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="G:/FPGA/ShoreLab06/simulation/qsim/" MIPS -c MIPS
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -54,29 +54,29 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Feb 18 23:20:11 2021
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=G:/FPGA/ShoreLab05/simulation/qsim/ MIPS -c MIPS
+    Info: Processing started: Thu Feb 25 22:00:37 2021
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=G:/FPGA/ShoreLab06/simulation/qsim/ MIPS -c MIPS
 Critical Warning (138069): Setting INCREMENTAL_COMPILATION to "OFF" is no longer supported. Assignment is ignored. To disable partitions, set the IGNORE_PARTITIONS global assignment to "ON" instead.
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file MIPS_7_1200mv_85c_slow.vho in folder "G:/FPGA/ShoreLab05/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPS_7_1200mv_0c_slow.vho in folder "G:/FPGA/ShoreLab05/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPS_min_1200mv_0c_fast.vho in folder "G:/FPGA/ShoreLab05/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPS.vho in folder "G:/FPGA/ShoreLab05/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPS_7_1200mv_85c_vhd_slow.sdo in folder "G:/FPGA/ShoreLab05/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPS_7_1200mv_0c_vhd_slow.sdo in folder "G:/FPGA/ShoreLab05/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPS_min_1200mv_0c_vhd_fast.sdo in folder "G:/FPGA/ShoreLab05/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPS_vhd.sdo in folder "G:/FPGA/ShoreLab05/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MIPS_7_1200mv_85c_slow.vho in folder "G:/FPGA/ShoreLab06/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MIPS_7_1200mv_0c_slow.vho in folder "G:/FPGA/ShoreLab06/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MIPS_min_1200mv_0c_fast.vho in folder "G:/FPGA/ShoreLab06/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MIPS.vho in folder "G:/FPGA/ShoreLab06/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MIPS_7_1200mv_85c_vhd_slow.sdo in folder "G:/FPGA/ShoreLab06/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MIPS_7_1200mv_0c_vhd_slow.sdo in folder "G:/FPGA/ShoreLab06/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MIPS_min_1200mv_0c_vhd_fast.sdo in folder "G:/FPGA/ShoreLab06/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MIPS_vhd.sdo in folder "G:/FPGA/ShoreLab06/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4669 megabytes
-    Info: Processing ended: Thu Feb 18 23:20:14 2021
+    Info: Peak virtual memory: 4670 megabytes
+    Info: Processing ended: Thu Feb 25 22:00:40 2021
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-G:/FPGA/ShoreLab05/simulation/qsim/MIPS.do generated.
+G:/FPGA/ShoreLab06/simulation/qsim/MIPS.do generated.
 
 Completed successfully. 
 
@@ -88,11 +88,11 @@ Reading G:/FPGA/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-
 # do MIPS.do
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:20:14 on Feb 18,2021
+# Start time: 22:00:40 on Feb 25,2021
 # vcom -work work MIPS.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -105,30 +105,29 @@ Reading G:/FPGA/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-# -- Compiling entity ShoreLab05
-# -- Compiling architecture structure of ShoreLab05
+# -- Compiling entity ShoreLab06
+# -- Compiling architecture structure of ShoreLab06
 
-# End time: 23:20:15 on Feb 18,2021, Elapsed time: 0:00:01
+# End time: 22:00:41 on Feb 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:20:15 on Feb 18,2021
-# vcom -work work Lab05A.vwf.vht 
+# Start time: 22:00:41 on Feb 25,2021
+# vcom -work work Lab06.vwf.vht 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ShoreLab05_vhd_vec_tst
-# -- Compiling architecture ShoreLab05_arch of ShoreLab05_vhd_vec_tst
-
-# End time: 23:20:15 on Feb 18,2021, Elapsed time: 0:00:00
+# -- Compiling entity ShoreLab06_vhd_vec_tst
+# -- Compiling architecture ShoreLab06_arch of ShoreLab06_vhd_vec_tst
+# End time: 22:00:41 on Feb 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -sdfmax ShoreLab05_vhd_vec_tst/i1=MIPS_vhd.sdo -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ShoreLab05_vhd_vec_tst 
-# Start time: 23:20:15 on Feb 18,2021
+# vsim -novopt -c -t 1ps -sdfmax ShoreLab06_vhd_vec_tst/i1=MIPS_vhd.sdo -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ShoreLab06_vhd_vec_tst 
+# Start time: 22:00:41 on Feb 25,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.shorelab05_vhd_vec_tst(shorelab05_arch)
+# Loading work.shorelab06_vhd_vec_tst(shorelab06_arch)
 # SDF 10.5b Compiler 2016.10 Oct  5 2016
 # 
 # Loading ieee.vital_timing(body)
@@ -137,41 +136,46 @@ Reading G:/FPGA/modelsim_ase/tcl/vsim/pref.tcl
 # Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.shorelab05(structure)
+# Loading work.shorelab06(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
 # Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
 # Loading cycloneive.cycloneive_ena_reg(behave)
-# Loading altera.dffeas(vital_dffeas)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
 # Loading cycloneive.cycloneive_ram_block(block_arch)
 # Loading cycloneive.cycloneive_ram_register(reg_arch)
 # Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
 # Loading instances from MIPS_vhd.sdo
 # Loading timing data from MIPS_vhd.sdo
-# ** Warning: Design size of 347391 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 348727 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /shorelab05_vhd_vec_tst File: Lab05A.vwf.vht
-
+#    Time: 0 ps  Iteration: 0  Instance: /shorelab06_vhd_vec_tst File: Lab06.vwf.vht
 # after#35
 
-# End time: 23:20:18 on Feb 18,2021, Elapsed time: 0:00:03
+# Simulation time: 283188 ps
+
+# Simulation time: 283188 ps
+
+# Simulation time: 283188 ps
+
+# End time: 22:00:51 on Feb 25,2021, Elapsed time: 0:00:10
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading G:/FPGA/ShoreLab05/Lab05A.vwf...
+Reading G:/FPGA/ShoreLab06/Lab06.vwf...
 
-Reading G:/FPGA/ShoreLab05/simulation/qsim/MIPS.msim.vcd...
+Reading G:/FPGA/ShoreLab06/simulation/qsim/MIPS.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to G:/FPGA/ShoreLab05/simulation/qsim/MIPS_20210218232018.sim.vwf
+Writing the resulting VWF to G:/FPGA/ShoreLab06/simulation/qsim/MIPS_20210225220051.sim.vwf
 
 Finished VCD to VWF conversion.
 

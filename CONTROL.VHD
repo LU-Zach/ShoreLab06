@@ -23,31 +23,30 @@ END control;
 
 ARCHITECTURE behavior OF control IS
 
-	SIGNAL  R_format, J_format, Lw, Sw, Beq, Bne 	: STD_LOGIC;
+	SIGNAL  R_format, J_format, Lw, Sw, Beq, Bne, Addi	: STD_LOGIC;
 
 BEGIN           
 				-- Code to generate control signals using opcode bits
 	R_format 	<=  '1'  WHEN  Opcode = "000000"  ELSE '0';
-	
-	--New instruction for moving to a specific instruction within JUMP range, may need to be renamed in future
 	J_format 	<=	 '1'  WHEN  Opcode = "000010" Else '0'; 
-	Lw          <=  '1'  WHEN  Opcode = "100011"  ELSE '0';
- 	Sw          <=  '1'  WHEN  Opcode = "101011"  ELSE '0';
-   Beq      	<=  '1'  WHEN  Opcode = "000100"  ELSE '0'; 
-	--New instruction for moving a number of instructions away from PC+4 when registers are not equal
+	Lw          <=  '1'  WHEN  Opcode = "100011" ELSE '0';
+ 	Sw          <=  '1'  WHEN  Opcode = "101011" ELSE '0';
+   Beq      	<=  '1'  WHEN  Opcode = "000100" ELSE '0'; 
+	Addi			<=	 '1'	WHEN	Opcode =	"001000"	ELSE '0';
 	Bne			<=  '1'  WHEN  Opcode = "000101"  ELSE '0';
-  	RegDst    	<=  R_format;
- 	ALUSrc  	<=  Lw OR Sw;
-	MemtoReg 	<=  Lw;
-  	RegWrite 	<=  R_format OR Lw;
-  	MemRead 	<=  Lw;
-   	MemWrite 	<=  Sw; 
- 	Branch      <=  Beq;
-	Branch_Not_Equal <= Bne; --New control signal, see IFETCH
-	Jump 			<= J_format; --New control signal, see IFETCH
-	ALUOp( 1 ) 	<=  R_format;
-	ALUOp( 0 ) 	<=  Beq or BNE; --ALU operation is still subtraction
 
+	
+  	RegDst    	<=  R_format;
+ 	ALUSrc  		<=  Lw OR Sw OR Addi;
+	MemtoReg	 	<=  Lw;
+  	RegWrite 	<=  R_format OR Lw OR Addi;
+  	MemRead 		<=  Lw;
+   MemWrite 	<=  Sw; 
+ 	Branch      <=  Beq;
+	Branch_Not_Equal <= Bne; 
+	Jump 			<= J_format; 
+	ALUOp( 1 ) 	<=  R_format;
+	ALUOp( 0 ) 	<=  Beq or BNE; 
    END behavior;
 
 

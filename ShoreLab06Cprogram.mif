@@ -1,0 +1,22 @@
+-- MIPS Instruction Memory Initialization File
+Depth = 256;
+Width = 32;
+Address_radix = HEX;
+Data_radix = HEX;
+Content
+Begin
+-- Use NOPS for default instruction memory values
+	[00..FF]: 00000000; -- nop (sll r0,r0,0)
+-- Place MIPS Instructions here
+-- Note: memory addresses are in words and not bytes
+-- i.e. next location is +1 and not +4
+	00: 20010000; --			addi $1, $0, 0 		--initialize variable a to 0
+	01: 20020001; --			addi $2, $0, 1 		--initialize variable count to 1
+	02: 2003FFFB; --			addi $3, $0, -5		--initialize static check value to -5
+	03: 0062202A; --	LOOP:	slt  $4, $3, $2 	--check -5 < count, T/F result in $4
+	04: 10800003; --			beq  $4, $0, EXIT 	--branch to exit if count < -4
+	05: 00220820; --			add  $1, $1, $2		--a= a + count 
+	06: 2042FFFF; --			addi $2, $2, -1 	--count=count-1
+	07: 1000FFFB; --			beq  $0, $0, LOOP	--branch to top of while loop (ALWAYS)
+	08: 00000000; --	EXIT:	nop
+End;
